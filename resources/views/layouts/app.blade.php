@@ -12,8 +12,8 @@
         <a class="navbar-brand" href="#">Laravel CRUD</a>
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="{{ route('departamentos.index') }}">Departamentos</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ route('funcionarios.index') }}">Funcionários</a></li>
+                <li class="nav-item"><a class="nav-link" href="/departamentos">Departamentos</a></li>
+                <li class="nav-item"><a class="nav-link" href="/funcionarios">Funcionários</a></li>
             </ul>
         </div>
     </div>

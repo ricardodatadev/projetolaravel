@@ -18,6 +18,6 @@
         <label for="ativo" class="form-check-label">Ativo</label>
     </div>
     <button class="btn btn-success">Atualizar</button>
-    <a href="{{ route('departamentos.index') }}" class="btn btn-secondary">Voltar</a>
+    <a href="" class="btn btn-secondary">Voltar</a>
 </form>
 @endsection

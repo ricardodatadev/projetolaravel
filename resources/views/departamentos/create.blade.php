@@ -2,7 +2,7 @@
 
 @section('content')
 <h2>Novo Departamento</h2>
-<form action="{{ route('departamentos.store') }}" method="POST">
+<form action="/departamentos" method="POST">
     @csrf
     <div class="mb-3">
         <label for="nome" class="form-label">Nome</label>
@@ -17,6 +17,6 @@
         <label for="ativo" class="form-check-label">Ativo</label>
     </div>
     <button class="btn btn-success">Salvar</button>
-    <a href="{{ route('departamentos.index') }}" class="btn btn-secondary">Voltar</a>
+    <a href="/departamentos" class="btn btn-secondary">Voltar</a>
 </form>
 @endsection

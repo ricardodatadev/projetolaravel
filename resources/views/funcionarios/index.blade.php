@@ -3,7 +3,7 @@
 @section('content')
 <div class="d-flex justify-content-between align-items-center mb-3">
     <h2>Funcionários</h2>
-    <a href="{{ route('funcionarios.create') }}" class="btn btn-primary">Novo Funcionário</a>
+    <a href="/funcionarios/create" class="btn btn-primary">Novo Funcionário</a>
 </div>
 
 @if($funcionarios->count())

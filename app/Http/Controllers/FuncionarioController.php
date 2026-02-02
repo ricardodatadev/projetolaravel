@@ -32,7 +32,7 @@ class FuncionarioController extends Controller
     public function store(Request $request)
     {
         Funcionario::create($request->all());
-        return redirect()->route('funcionarios.index');
+        return redirect()->to(url('/funcionarios'));
     }
 
     /**
@@ -50,7 +50,7 @@ class FuncionarioController extends Controller
     public function update(Request $request, Funcionario $funcionario)
     {
         $funcionario->update($request->all());
-        return redirect()->route('funcionarios.index');
+        return redirect()->to(url('/funcionarios'));
     }
 
     /**
@@ -59,6 +59,6 @@ class FuncionarioController extends Controller
     public function destroy(Funcionario $funcionario)
     {
         $funcionario->delete();
-        return redirect()->route('funcionarios.index');
+        return redirect()->to(url('/funcionarios'));
     }
 }

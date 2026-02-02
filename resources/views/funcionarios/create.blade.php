@@ -2,7 +2,7 @@
 
 @section('content')
 <h2>Novo Funcionário</h2>
-<form action="{{ route('funcionarios.store') }}" method="POST">
+<form action="{{ url('/funcionarios') }}" method="POST">
     @csrf
     <div class="mb-3">
         <label for="nome" class="form-label">Nome</label>
@@ -25,6 +25,6 @@
         <label for="ativo" class="form-check-label">Ativo</label>
     </div>
     <button class="btn btn-success">Salvar</button>
-    <a href="{{ route('funcionarios.index') }}" class="btn btn-secondary">Voltar</a>
+    <a href='/funcionarios' class="btn btn-secondary">Voltar</a>
 </form>
 @endsection
